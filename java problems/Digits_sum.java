@@ -6,10 +6,18 @@ public class Digits_sum {
         System.out.println("Enter digits: ");
         String[] str = sc.nextLine().split("");
         sc.close();
-        int sum = 0;
-        for (String i : str) {
-            sum += Integer.parseInt(i);
+        // int sum = 0;
+        // for (String i : str) {
+        //     sum += Integer.parseInt(i);
+        // }
+        // System.out.println("Sum of digits: " + sum);
+        int[] arr = new int[str.length];
+        for (int i = 0; i < str.length; i++) {
+            arr[i] = Integer.parseInt(str[i]);
         }
-        System.out.println("Sum of digits: " + sum);
+
+        for (int i : arr) {
+            System.out.println(i);
+        }
     }
 }
