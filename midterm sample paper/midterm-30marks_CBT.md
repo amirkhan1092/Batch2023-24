@@ -168,12 +168,12 @@ You are given a string `sentence` containing words separated by spaces. Write a 
 Sample Input 1
 `Hello, how are you?`
 Sample Output 1
-5
+7
 
 Sample Input 2
 `Python is amazing!`
 Sample Output 2
-6
+5
 ```
 
 ---
