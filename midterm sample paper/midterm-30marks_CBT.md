@@ -166,12 +166,12 @@ You are given a string `sentence` containing words separated by spaces. Write a 
 **Example:**
 ```python
 Sample Input 1
-"Hello, how are you?"
+`Hello, how are you?`
 Sample Output 1
 5
 
 Sample Input 2
-"Python is amazing!"
+`Python is amazing!`
 Sample Output 2
 6
 ```
@@ -192,7 +192,7 @@ Sample Output 1
 sample Input 2
 2 4 6 8 10
 Sample Output 2
-16 36 64 100
+None
 ```
 
 ---
