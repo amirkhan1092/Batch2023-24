@@ -149,12 +149,12 @@ Write a Python program that takes an integer `n` as input and prints the sum of 
 Sample Input 1
 10
 Sample Output 1
-30
+6
 
 Sample Input 2
 15
 Sample Output 2
-60
+18
 ```
 
 ---
