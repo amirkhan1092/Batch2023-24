@@ -149,12 +149,12 @@ Write a Python program that takes an integer `n` as input and prints the sum of 
 Sample Input 1
 10
 Sample Output 1
-30
+6
 
 Sample Input 2
 15
 Sample Output 2
-60
+18
 ```
 
 ---
@@ -168,12 +168,12 @@ You are given a string `sentence` containing words separated by spaces. Write a 
 Sample Input 1
 "Hello, how are you?"
 Sample Output 1
-5
+7
 
 Sample Input 2
 "Python is amazing!"
 Sample Output 2
-6
+5
 ```
 
 ---
@@ -192,7 +192,7 @@ Sample Output 1
 sample Input 2
 2 4 6 8 10
 Sample Output 2
-16 36 64 100
+None
 ```
 
 ---
