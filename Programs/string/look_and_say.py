@@ -1,5 +1,5 @@
 st = '1'
-n = 4
+n = 1
 s = ''
 print(st)
 while n:
