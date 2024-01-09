@@ -15,12 +15,18 @@ print_stack(moves)
 
 choice = 'X'
 while 1:
-    m_id = int(input(f'Turn {choice} Enter the move position (0-8) '))
+    try:
+        m_id = int(input(f'Turn {choice} Enter the move position (0-8) '))
+        right_index = moves[m_id]
+    except :
+        print('Wrong move Try Again')
+        continue
     if moves[m_id] == ' ':
         moves[m_id] = choice
     else:
         print('location already used ')
         continue
     print_stack(moves)
+
 
     choice = 'X' if choice == '0' else '0'
