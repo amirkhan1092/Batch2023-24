@@ -6,7 +6,7 @@ class Employee:
         self.salary = salary
 
     def display_details(self):
-        return f"Employee ID: {self.employee_id}\nName: {self.name}\nPosition: {self.position}\nSalary: ${self.salary}"
+        return f"Employee ID: {self.employee_id}\nName: {self.name}\nPosition: {self.position}\nSalary: {self.salary}"
 
     def update_salary(self, new_salary):
         self.salary = new_salary
