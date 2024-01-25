@@ -1,4 +1,5 @@
-import test
-out = test.sub(2, 45)
-print(out)
-print(__name__)
+from test import *
+
+out = sub(2, 5)
+
+print('result is', out)
