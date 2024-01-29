@@ -1,6 +1,6 @@
 # Bank Management System 
 
-class Bank:
+class Bank_Account:
     def __init__(self,name,initialAmount = 0) -> None:
         self.bankBalance = initialAmount
         self.name = name
@@ -23,10 +23,11 @@ class Bank:
             Current Balance: {self.bankBalance}''')
 
 # main code 
+        
 account_holder = input('Enter the Acount Holder Name ')
 initial_amount = eval(input('Enter the initial Amount '))
 print('Welcome to ABC bank')
-account1 = Bank(account_holder, initial_amount)
+account1 = Bank_Account(account_holder, initial_amount)
 while 1:
     print('''Menu:
 
