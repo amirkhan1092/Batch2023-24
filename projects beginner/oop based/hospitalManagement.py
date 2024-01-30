@@ -67,18 +67,6 @@ if __name__ == "__main__":
     medical_records = MedicalRecord()
     medical_records.add_record(patient1, doctor1, 'Heart condition', 'Aspirin')
     medical_records.add_record(patient2, doctor2, 'Common cold', 'Antibiotics')
-
-    # Assign doctors to patients
-    patient1.assign_doctor(doctor1)
-    patient2.assign_doctor(doctor2)
-
     # Display records
-    print("Medical Records:")
-    for record in medical_records.get_records().values():
-        print("Patient ID:", record['Patient']['Patient ID'])
-        print("Patient Name:", record['Patient']['Name'])
-        print("Doctor Name:", record['Doctor']['Name'])
-        print("Diagnosis:", record['Diagnosis'])
-        print("Medication:", record['Medication'])
-        print()
-
+    
+    print(medical_records.get_records()[1])
