@@ -69,4 +69,4 @@ if __name__ == "__main__":
     medical_records.add_record(patient2, doctor2, 'Common cold', 'Antibiotics')
     # Display records
     
-    print(medical_records.get_records()[1])
+    print(medical_records.get_records())
