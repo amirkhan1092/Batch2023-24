@@ -76,7 +76,7 @@ while 1:
                 print(account.display_balance())
             elif ch == 5:
                 break
-            [35, 37, 41, 54, 57, 60]
+            
 
                 
             
