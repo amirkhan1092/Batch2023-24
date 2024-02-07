@@ -1,41 +1,23 @@
-'''
-tkinter
-wxpython
-pyqt6
-'''
-
-
+# import tkinter as tk
 from tkinter import *
-class App:
-    def __init__(self, mainwindow) -> None:
-        self.mainwindow = mainwindow
-        mainwindow.title('Counter App')
-        mainwindow.geometry('400x200')
-        mainwindow.minsize(200, 100) 
-        self.var_text = IntVar(value=0)
-        lb1 = Label(self.mainwindow, textvariable=self.var_text)
-        lb1.pack()
 
-        bt1 = Button(self.mainwindow, text=" +  ", command=self.action)
-        bt2=Button(self.mainwindow,text="  -  ",command=self.action2)
-        bt1.pack(side=LEFT, padx=20, pady=20, ipadx=50, ipady=20)
-        bt2.pack(side=RIGHT, padx=20, pady=20, ipadx=50, ipady=20)
-
-    def action(self):
-        self.var_text.set(self.var_text.get()+1)
-
-    def action2(self):
-        self.var_text.set(self.var_text.get()-1)
-
-# main code 
 root = Tk()
-exe = App(root)
+root.geometry('200x100')
+root.title('First App')
+root.minsize(100, 50)
+
+def my_fun1():
+    data = lb.cget('text')
+    data += 1
+    lb.config(text=data, bg='red')
+def my_fun2():
+    lb.config(text=lb.cget('text')-1)
+
+lb = Label(root, text=0)
+lb.pack()
+bt1 = Button(root, text=' + ', command=my_fun1)
+bt1.pack()
+bt2 = Button(root, text=' - ', command=my_fun2)
+bt2.pack()
+
 root.mainloop()
-
-
-
-
-
-
-
-
