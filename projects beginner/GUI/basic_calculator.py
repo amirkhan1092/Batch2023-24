@@ -8,7 +8,10 @@ def calculate_sum():
         result = num1 + num2
         messagebox.showinfo("Result", f"The sum is: {result}")
     except ValueError:
-        messagebox.showerror("Error", "Please enter valid numbers")
+        print(messagebox.showerror("Error", "Please enter valid numbers"))
+        print(messagebox.showwarning("warnings", 'value exceeded'))
+        print(messagebox.askquestion("warnings", 'value exceeded'))
+
 
 # Create main application window
 root = tk.Tk()

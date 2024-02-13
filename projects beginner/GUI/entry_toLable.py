@@ -1,26 +1,33 @@
 import tkinter as tk
 
-def display_greeting():
-    name = entry.get()
-    greeting_message = f"Hello, {name}!"
-    label_result.config(text=greeting_message)
 
-# Create the main window
 root = tk.Tk()
-root.title("Greeting App")
 
-# Create and place widgets
-label_name = tk.Label(root, text="Enter your name:")
-label_name.pack(pady=10)
+def action():
+    data = entry.get()
+    count=0
+    for i in range(1,int(data)+1):
+        if int(data)%i==0:
+            count+=1
+    if count==2:
+        disp.config(text="PRIME")
+    else:
+        disp.config(text="NOT PRIME")
+
+    entry.delete(0, tk.END)
+
+
+tk.Label(root, text='Enter the number').pack()
 
 entry = tk.Entry(root)
-entry.pack(pady=10)
+entry.pack()
 
-button_greet = tk.Button(root, text="Greet", command=display_greeting)
-button_greet.pack(pady=10)
+bt1 = tk.Button(root, text='prime check', command=action)
+bt1.pack()
 
-label_result = tk.Label(root, text="")
-label_result.pack(pady=10)
+disp = tk.Label(root, text='')
+disp.pack()
+bt2 = tk.Button(root, text='Exit', command=root.destroy)
+bt2.pack()
 
-# Start the Tkinter event loop
 root.mainloop()

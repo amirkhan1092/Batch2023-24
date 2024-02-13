@@ -6,6 +6,7 @@ def display_message():
     user_input = entry.get()  # Get the user input from the entry widget
     message = "Hello, " + user_input + "!"  # Create a message to display
     messagebox.showinfo("Greetings", message)  # Display the message using a messagebox
+    entry.delete(0, tk.END)
 
 # Create the main application window
 root = tk.Tk()
