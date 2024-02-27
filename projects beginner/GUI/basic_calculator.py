@@ -8,9 +8,13 @@ def calculate_sum():
         result = num1 + num2
         messagebox.showinfo("Result", f"The sum is: {result}")
     except ValueError:
-        print(messagebox.showerror("Error", "Please enter valid numbers"))
-        print(messagebox.showwarning("warnings", 'value exceeded'))
-        print(messagebox.askquestion("warnings", 'value exceeded'))
+        # messagebox.showerror("Error", "Please enter valid numbers"))
+        # messagebox.showwarning("warnings", 'value exceeded'))
+        re = messagebox.askquestion("warnings", 'Do you Want to Exit?')
+        if re.casefold() == 'yes':
+            root.destroy()
+        
+
 
 
 # Create main application window
