@@ -15,6 +15,7 @@ def deleteitem():
     selct_index = list_box.curselection()
     list_box.delete(selct_index)
 def deleteitemall():
+    print(list_box.size())
     list_box.delete(0, tk.END)
 
 
