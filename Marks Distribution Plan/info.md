@@ -18,5 +18,5 @@ Sections: CA, CB, CC, CD, CF, CE, EA, EB
 | Certificate Submission    | 5 Marks                    | -      1st Week of Feb'24    | 5 Marks      |
 | Weekly Lab Projects       | 10 Marks                   | -       Before               | 10 Marks     |
 | Quiz                       | 10 Marks                   | -      Week before Mid Term  | 10 Marks     |
-| Viva                       | 10 Marks                   | -     Week before End Term   | 10 Marks     |
+| Viva(Hackathon Marks)                       | 10 Marks                   | -     Week before End Term   | 10 Marks     |
 | **Total**                  |                            |                             | **50 Marks** |
