@@ -1,25 +1,21 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-s.bind(('localhost', 1234))
-
-actual_number = "14"
+# address = ('localhost', 1234)
+address = (socket.gethostname(), 1234)
+s.bind(address)
 s.listen(1)
-
-print('waiting for connections')
-cl, address = s.accept()
+print('Waiting for Connections.... address', address)
+client, addr = s.accept()
+print('Connection Established ', addr)
 while 1:
+    data = client.recv(1024)
+    if not data:
+        break
+    print('Client:', data)
+    data = input('Server: ').encode()
+    client.send(data)
+    
+client.close()
+s.close()
 
-    data = cl.recv(1024)
-    if data.decode() > actual_number:
-        d = "Number is too large try again"
-    elif data.decode() < actual_number:
-        d = "Number is too small try again!"
-    elif data.decode() == actual_number:
-        d = "You guessed it correct!"
-
-    print('Client:', data.decode())
-    cl.send(d.encode())
-
-cl.close()

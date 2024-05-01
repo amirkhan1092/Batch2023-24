@@ -1,20 +1,14 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+address = ('localhost', 1234)
+s.connect(address)
 
-s.connect(('localhost', 1234))
 while 1:
-    
-
-    message = input('Client:').encode()
-    s.send(message)
-
-    data = s.recv(1024)
-    print('Server:', data)
-    
+    data = input('Client: ').encode()
+    s.send(data)
+    res = s.recv(1024)
+    if not res:
+        break
+    print('Server:', res.decode())
 s.close()
-
-
-
-
-
