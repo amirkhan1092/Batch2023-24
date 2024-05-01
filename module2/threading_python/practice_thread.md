@@ -51,21 +51,21 @@ Sure, here's the list with each problem followed by its description, sample inpu
    ...
    ```
 
-4. **Threaded File Reader**:
-   Create a Python application that reads a text file in a separate thread and prints its content to the console.
+4. **Threaded Random Password Generator**:
+    Create a Python program that generates a random password of given length in a separate thread and prints the result.
 
-   **Description:**
-   This program reads the content of a text file in a separate thread and prints it to the console.
+    **Description:**
+    This program generates a random password of a given length in a separate thread.
 
-   **Sample Input (file.txt):**
-   ```
-   This is a sample text file.
-   ```
+    **Sample Input:**
+    ```
+    Enter the length of the password: 8
+    ```
 
-   **Sample Output:**
-   ```
-   This is a sample text file.
-   ```
+    **Sample Output:**
+    ```
+    Random Password: xY8$z2Pq
+    ```
 
 5. **Threaded Number Generator**:
    Write a Python program that generates and prints five random numbers with a delay of one second between each using threading.
@@ -159,3 +159,69 @@ Sure, here's the list with each problem followed by its description, sample inpu
     ****
     *****
     ```
+
+
+
+    Sure, here are the next 5 beginner-level problems using the threading module in Python:
+
+11. **Threaded Prime Checker**:
+    Write a Python program that checks if a given number is prime or not in a separate thread and prints the result.
+
+    **Description:**
+    This program prompts the user for a number and checks if it is prime or not using threading.
+
+    **Sample Input:**
+    ```
+    Enter a number: 17
+    ```
+
+    **Sample Output:**
+    ```
+    17 is a prime number.
+    ```
+
+12. **Threaded Sum of Squares Calculator**:
+    Create a Python program that calculates the sum of squares of numbers from 1 to 10 using multiple threads, each responsible for a portion of the calculation.
+
+    **Description:**
+    This program calculates the sum of squares of numbers from 1 to 10 using multiple threads.
+
+    **Sample Output:**
+    ```
+    Sum of squares from 1 to 10 is 385.
+    ```
+
+13. **Threaded Fibonacci Calculator**:
+    Develop a Python application that calculates the nth Fibonacci number in a separate thread and prints the result.
+
+    **Description:**
+    This program calculates the nth Fibonacci number in a separate thread.
+
+    **Sample Input:**
+    ```
+    Enter the value of n: 10
+    ```
+
+    **Sample Output:**
+    ```
+    The 10th Fibonacci number is 55.
+    ```
+
+14. **Threaded Simple Calculator**:
+    Write a Python program that performs simple arithmetic operations (addition, subtraction, multiplication, and division) in a separate thread based on user input.
+
+    **Description:**
+    This program prompts the user for two numbers and an operation, then performs the operation in a separate thread.
+
+    **Sample Input:**
+    ```
+    Enter the first number: 10
+    Enter the second number: 5
+    Enter the operation (+, -, *, /): *
+    ```
+
+    **Sample Output:**
+    ```
+    Result: 50
+    ```
+
